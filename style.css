@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@1..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body{
+    font-size: 17px;
+    line-height: 1.5;
+    background-color: #fff;
+    background-image: url(img/abstract-seamless-heart-pattern-background-paper-vector-23399901.jpg);
+    background-attachment: scroll;
+}
+
+.box{
+    background: #e91e63;
+    padding: 60px 60px;
+    color: #fff;
+    width: 50%;
+    text-align: center;
+    margin: 20vh auto;
+    position: relative;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .5);
+
+    h3{
+        font-size: 30px;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin: 5px;
+        font-family: 'Hepta Slab',sans-serif;
+    }
+    p{
+        font-family: 'Poppins',sans-serif;
+        font-size: 20px;
+    }
+}
+.top-border:before{
+    content: '';
+    width: 71px;
+    height: 71px;
+    position: absolute;
+    background: url(img/top.png);
+    background-size: cover;
+    top: 20px;
+    left: 20px;
+    transform: rotate(90deg);
+}
+.top-border:after{
+    content: '';
+    width: 71px;
+    height: 71px;
+    position: absolute;
+    background: url(img/top.png);
+    background-size: cover;
+    top: 20px;
+    right: 20px;
+    transform: rotate(180deg);
+}
+.bottom-border:before{
+    content: '';
+    width: 71px;
+    height: 71px;
+    position: absolute;
+    background: url(img/top.png);
+    background-size: cover;
+    bottom: 20px;
+    left: 20px;
+    transform: rotate(-360deg);
+}
+.bottom-border:after{
+    content: '';
+    width: 71px;
+    height: 71px;
+    position: absolute;
+    background: url(img/top.png);
+    background-size: cover;
+    bottom: 20px;
+    right: 20px;
+    transform: rotate(-90deg);
+}
+
+.love{
+    animation: pulse 1s ease infinite;
+    display: inline-block;
+}
+
+.models{
+    display: none;
+}
+.container {
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.img--heart{
+    height: 400px;
+    width: 300px;
+
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+.heart {
+
+    height: 450px; /* Ajuste o tamanho conforme necessário */
+    width: 300px; /* Ajuste o tamanho conforme necessário */;
+    background-size: cover;
+    margin:0 auto 50px auto;
+    animation: float 3s infinite alternate ease-in-out;
+
+}
+
+.arrow-down{
+    color: #fff;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20vh;
+
+    .back-arrow{
+        background: #e91e63;
+        height: 100%;
+        width: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+        font-size: 4em;
+    }
+}
+  
+@keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-50px); /* Ajuste a distância de flutuação conforme necessário */
+    }
+}
+@keyframes pulse{
+    0%{ transform: scale(1);}
+    50%{ transform: scale(1.3);}
+    100%{ transform: scale(1);}
+}
